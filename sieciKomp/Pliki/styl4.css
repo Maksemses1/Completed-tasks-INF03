@@ -1,0 +1,60 @@
+*{
+  font-family: Verdana;
+  text-align: center;
+}
+
+header{
+  background-color: DarkGreen;
+  color: white;
+  padding: 5px;
+}
+
+section {
+  float: left;  
+}
+
+#lewy {
+  background-color: PaleGreen;
+  width:30%;
+  height:500px;
+}
+
+#prawy {
+  background-color: Honeydew;
+  width: 70%;
+  height: 500px;
+  padding-top: 100px;
+}
+
+footer {
+  background-color: PaleGreen;
+  padding 3px;
+  clear: both;
+}
+
+table, td {
+  border: 1px solid DarkGreen;
+  border-collapse: collapse;
+}
+
+table {
+  margin: auto;
+  width: 95%;
+}
+table, th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+input[type="button"]{
+  background-color: DarkGreen;
+  color: white;
+  padding: 5px;
+  &:hover{
+    background-color: Honeydew;
+    color: DarkGreen;
+  }
+}
+

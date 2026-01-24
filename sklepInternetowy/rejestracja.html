@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="./styl.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <section id="lewy">
+      <img src="./obraz.png" alt="promocje">
+      <h2>Sprawdz promocje</h2>
+      <table>
+        <tr>
+          <th>co?</th>
+          <th>ile taniej?</th>
+        </tr>
+        <tr>
+          <td>ubrania</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>buty</td>
+          <td>25%</td>
+        </tr>
+      </table>
+    </section>
+    <header>
+      <h1>Zarejestruj się w sklepie</h1>
+    </header>
+    <main>
+      <input type="button" value="Klient" onclick="changeBlock(0)">
+      <input type="button" value="Adres" onclick="changeBlock(1)">
+      <input type="button" value="Kontakt" onclick="changeBlock(2)">
+      <div id="klientF">
+        <p>Imie</p>
+        <input type="text" placeholder="Wpisz dane..." onfocusout="focusOut()">
+        <p>Nazwisko</p>
+        <input type="text" onfocusout="focusOut()">
+        <p>Data urodzenia</p>
+        <input type="date" onfocusout="focusOut()">
+      </div>
+      <div id="adresF">
+        <p>Ulica</p>
+        <input type="text" onfocusout="focusOut()">
+        <p>Numer</p>
+        <input type="number" onfocusout="focusOut()">
+        <p>Miasto</p>
+        <input type="text" onfocusout="focusOut()">
+      </div>
+      <div id="kontaktF">
+        <p>Numer komorkowy</p>
+        <input type="tel" onfocusout="focusOut()"><br>
+        <label><input type="checkbox"> Akceptuję RODO</label><br>
+        <input type="button" value="Zatwierdź dane" onclick="zatwierdz()">
+      </div>
+    </main>
+    <nav>
+     <section id="postep">
+     </section> 
+    </nav>
+    <footer>
+      <h4>Rejestrację do sklepu wykonał: 00000000000</h4>
+    </footer>
+    <script src="./script.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+* {
+  font-family: Garamond;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  float:left;
+  background-color: Tomato;
+  color: white;
+  text-align: center;
+  width: 80%;
+  height: 80px;
+}
+
+main {
+  float: left;
+  width: 80%;
+  height: 600px;
+}
+
+section {
+  float: right;
+  background-color: Coral;
+  width: 20%;
+  height: 680px;
+}
+
+footer {
+  background-color: Tomato;
+  color: White;
+  text-align: center;
+  clear:both;
+}
+
+img {
+  border-radius: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#chat{
+  border: 1px solid Tomato;
+  margin: 15px;
+  height: 470px;
+  overflow: scroll;
+}
+
+.message-j, .message-k{
+  border-radius: 5px;
+  width: 90%;
+  height: 70px;
+  margin: 2%;
+  padding: 3px;
+}
+
+.message-j{
+  background-color: #EEE;
+  & img{
+    float: left;
+  }
+  & p{
+    float: left;
+  } 
+}
+
+
+.message-k{
+  background-color: #CCC;
+  & img{
+    float: right;
+  }
+  & p{
+    text-align: right;
+    float: right;
+  } 
+}
+
+input[type="button"] {
+  background-color: Tomato;
+  border: 1px solid DarkRed;
+  padding: 5px;
+  font-weight: bold;
+}
+
+input[type="text"]{
+  width: 500px;
+}

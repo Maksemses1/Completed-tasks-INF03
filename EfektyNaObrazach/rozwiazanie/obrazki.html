@@ -37,7 +37,7 @@
     </footer>
     <script>
       function zmienPszczola() {
-        pszczola.style.filter = blurR.checked ? "blur(6px)" : (sepiaR.checked ? "sepia(100%)" : (negatywR.checked ? "invert(100%)" : ""));
+        pszczola.style.filter = blurR.checked ? `blur(${Math.floor(Math.random() * 5) + 4}px)` : (sepiaR.checked ? "sepia(100%)" : (negatywR.checked ? "invert(100%)" : ""));
       }
       function zmienPomarancza(effect) { 
         pomarancza.style.filter = effect ? "grayscale(100%)" : "grayscale(0%)";

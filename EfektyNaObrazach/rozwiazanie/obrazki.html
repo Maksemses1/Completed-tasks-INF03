@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Efekty obrazu</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styl.css">
+  </head>
+  <body>
+    <header>
+      <h2>Efekty na obrazach</h2>
+    </header>
+    <section>
+      <img src="./pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="pszczola"><br>
+      <label for="blurR"><input type="radio" name="efekt" id="blurR"> Blur</label><br>
+      <label for="sepiaR"><input type="radio" name="efekt" id="sepiaR"> Sepia</label><br>
+      <label for="negatywR"><input type="radio" name="efekt" id="negatywR"> Negatyw</label><br>
+      <input type="button" value="Zastosuj" onclick="zmienPszczola()">
+    </section>
+    <section>
+      <img src="./pomarancza.jpg" alt="drzewo pomarańczy" id="pomarancza"><br>
+      <input type="button" value="Kolorowy" onclick="zmienPomarancza(false)">
+      <input type="button" value="Czarno-bialy" onclick="zmienPomarancza(true)">
+    </section>
+    <section>
+      <img src="./owoce.jpg" alt="Kosz pełen owoców" id="owoce"><br>
+      <input type="range" value="100" min="0" max="100" id="rangeOwoce"><br>
+      <input type="button" value="Zastosuj" onclick="zmienOwoce()">
+    </section>
+    <section>
+     <img src="./zolw.jpg" alt="Żółw w wodzie" id="zolw"><br>
+     <input type="range" min="0" max="250" id="rangeZolw"><br>
+     <input type="button" value="Zastosuj" onclick="zmienZolw()">
+    </section>
+    <footer>
+     <p><a href="http://www.css.com/" target="blank">Zobacz inne efekty obrazu</a></p>
+     <p>Stronę wykonał: matka jebeniego</p>
+    </footer>
+    <script>
+      function zmienPszczola() {
+        pszczola.style.filter = blurR.checked ? "blur(6px)" : (sepiaR.checked ? "sepia(100%)" : (negatywR.checked ? "invert(100%)" : ""));
+      }
+      function zmienPomarancza(effect) { 
+        pomarancza.style.filter = effect ? "grayscale(100%)" : "grayscale(0%)";
+      }
+      function zmienOwoce(){
+        owoce.style.filter = `opacity(${rangeOwoce.value}%)`;
+      }
+      function zmienZolw(){
+        zolw.style.filter = `brightness(${rangeZolw.value}%)`;
+      }
+    </script>
+  </body>
+</html>
+

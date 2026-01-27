@@ -1,22 +1,22 @@
-*{
+* {
   font-family: Verdana;
   text-align: center;
 }
 
-header{
+header {
   background-color: DarkGreen;
   color: white;
   padding: 5px;
 }
 
 section {
-  float: left;  
+  float: left;
 }
 
 #lewy {
   background-color: PaleGreen;
-  width:30%;
-  height:500px;
+  width: 30%;
+  height: 500px;
 }
 
 #prawy {
@@ -28,11 +28,12 @@ section {
 
 footer {
   background-color: PaleGreen;
-  padding 3px;
+  padding: 3px;
   clear: both;
 }
 
-table, td {
+table,
+td {
   border: 1px solid DarkGreen;
   border-collapse: collapse;
 }
@@ -41,20 +42,22 @@ table {
   margin: auto;
   width: 95%;
 }
-table, th {
+
+table,
+th {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-input[type="button"]{
+input[type="button"] {
   background-color: DarkGreen;
   color: white;
   padding: 5px;
-  &:hover{
+
+  &:hover {
     background-color: Honeydew;
     color: DarkGreen;
   }
 }
-

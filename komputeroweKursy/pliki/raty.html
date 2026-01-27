@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Kursy komputerowe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <img src="./baner.png" alt="kursy komputerowe">
+    </header>
+    <nav>
+      <a href="./index.html">Strona glowna</a>
+      <a href="./raty.html">Koszt rat</a>
+      <a href="https://moje-szkolenia.pl/">Nasz partner</a>
+    </nav>
+    <main>
+     <h3>Oblicz miesięczną ratę</h3>
+     <label for="react"><input type="checkbox" id="react" class="kontrolki">Kurs React.js</label><br>
+     <label for="javascript"><input type="checkbox" id="javascript" class="kontrolki">Kurs JavaScript</label><br>
+     <label for="ilRaty">Liczba rat:<input type="number" id="ilRaty" class="kontrolki"></label><br>
+     <select id="miasto" class="kontrolki">
+       <option>Warszawa</option>
+       <option>Katowice</option>
+       <option>Gdansk</option>
+     </select><br>
+     <input type="button" value="Oblicz" class="kontrolki" onclick="oblicz()">
+     <p id="wynik"></p>
+    </main>
+    <footer>
+      <p>Autor strony: 00000000000</p>
+    </footer>
+    <script src="./script.js"> 
+    </script>
+  </body>
+</html>

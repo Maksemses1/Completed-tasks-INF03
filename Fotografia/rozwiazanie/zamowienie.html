@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Fotografia</title>
+    <meta charset="UTF-8">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Fotografia artystyczna</h1>
+    </header>
+    <section id="obrazki">
+      <img src="./1.jpg" alt="obrazy do sprzedazy" title="1.jpg">
+      <img src="./2.jpg" alt="obrazy do sprzedazy" title="2.jpg">
+      <img src="./3.jpg" alt="obrazy do sprzedazy" title="3.jpg">
+      <img src="./4.jpg" alt="obrazy do sprzedazy" title="4.jpg">
+      <img src="./5.jpg" alt="obrazy do sprzedazy" title="5.jpg">
+      <img src="./6.jpg" alt="obrazy do sprzedazy" title="6.jpg">
+      <img src="./7.jpg" alt="obrazy do sprzedazy" title="7.jpg">
+      <img src="./8.jpg" alt="obrazy do sprzedazy" title="8.jpg">
+      <img src="./9.jpg" alt="obrazy do sprzedazy" title="9.jpg">
+      <img src="./10.jpg" alt="obrazy do sprzedazy" title="10.jpg">
+    </section>
+    <main>
+      <section id="lewy">
+       <h3>Zamówienie</h3>
+       <label for="plik">Wybierz obraz: <input type="file" id="plik" accept="image/jpeg" /></label><br>
+       <label for="kopii">Liczba kopii: <input type="number" id="kopii"></label><br>
+       <label for="blyszczoncy"><input type="radio" name="papier" id="blyszczoncy" cheaked="checked">Papier błyszczący</label><br>
+       <label for="matowy"><input type="radio" name="papier" id="matowy">Papier matowy</label><br>
+       <input type="button" value="Dodaj do koszyka" onclick="dodaj()">
+      </section>
+      <nav>
+        <ul>
+          <li><a href="./regulamin.html">Regulamin</a></li>
+          <li><a href="./uslugi.html">Uslugi</a></li>
+          <li><a href="https://pixabay.com">Zdjecia</a></li>
+        </ul>
+      </nav>
+      <section id="prawy">
+        <h3>Koszyk</h3>
+        <div id="koszyk">
+        </div>
+      </section>
+    </main>
+    <footer>
+     <p>Autor strony: <em><i>00000000000</i></em></p> 
+    </footer>
+    <script src="./script.js">
+    </script>
+  </body>
+</html>
